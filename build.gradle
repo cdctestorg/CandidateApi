@@ -8,7 +8,9 @@ plugins {
 
 }
 
+group = 'com.cdc'
 version = scmVersion.version
+sourceCompatibility = '11'
 
 configurations {
     compileOnly {
