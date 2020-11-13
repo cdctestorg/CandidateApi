@@ -2,12 +2,13 @@ plugins {
     id 'org.springframework.boot' version '2.3.5.RELEASE'
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
-    id "pl.allegro.tech.build.axion-release" version "1.12.1"
+    id 'pl.allegro.tech.build.axion-release' version '1.12.1'
+    id 'com.palantir.docker' version '0.25.0'
+    id 'com.palantir.docker-run' version '0.25.0'
+
 }
 
-group = 'com.cdc'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+version = scmVersion.version
 
 configurations {
     compileOnly {
@@ -36,4 +37,18 @@ test {
     useJUnitPlatform()
 }
 
+project.version = scmVersion.version
+String imageName = "cdc/candidate-mgmt-api:$version"
 
+docker {
+    name imageName
+    files "build/libs/${bootJar.archiveFileName.get()}"
+    buildArgs([JAR_FILE: bootJar.archiveFileName.get()])
+}
+
+dockerRun {
+    name project.name
+    image imageName
+    ports '8080:8080'
+    clean true
+}
