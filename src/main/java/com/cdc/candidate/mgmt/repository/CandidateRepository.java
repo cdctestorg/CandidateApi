@@ -1,6 +1,6 @@
-package com.cdc.api1.repository;
+package com.cdc.candidate.mgmt.repository;
 
-import com.cdc.api1.entity.Candidate;
+import com.cdc.candidate.mgmt.entity.Candidate;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

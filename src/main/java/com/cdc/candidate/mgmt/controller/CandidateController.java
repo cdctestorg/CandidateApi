@@ -1,7 +1,7 @@
-package com.cdc.api1.controller;
+package com.cdc.candidate.mgmt.controller;
 
-import com.cdc.api1.entity.Candidate;
-import com.cdc.api1.repository.CandidateRepository;
+import com.cdc.candidate.mgmt.entity.Candidate;
+import com.cdc.candidate.mgmt.repository.CandidateRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
-package com.cdc.api1;
+package com.cdc.candidate.mgmt;
 
-import com.cdc.api1.entity.Candidate;
+import com.cdc.candidate.mgmt.entity.Candidate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

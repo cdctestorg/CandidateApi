@@ -1,7 +1,7 @@
-package com.cdc.api1;
+package com.cdc.candidate.mgmt;
 
-import com.cdc.api1.entity.Candidate;
-import com.cdc.api1.repository.CandidateRepository;
+import com.cdc.candidate.mgmt.entity.Candidate;
+import com.cdc.candidate.mgmt.repository.CandidateRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

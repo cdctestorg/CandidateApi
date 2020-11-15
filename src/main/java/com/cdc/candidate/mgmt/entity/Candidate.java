@@ -1,4 +1,4 @@
-package com.cdc.api1.entity;
+package com.cdc.candidate.mgmt.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
