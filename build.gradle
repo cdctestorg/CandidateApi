@@ -40,7 +40,7 @@ test {
 }
 
 project.version = scmVersion.version
-String imageName = "cdc/candidate-mgmt-api:$version"
+String imageName = "cdecastro/candidate-mgmt-api:$version"
 
 docker {
     name imageName
